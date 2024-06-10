@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.pentagono {
+    width: 100px;
+    height: 100px;
+    background-color: #ffcc00;
+    clip-path: polygon(
+        50% 0%,
+        100% 38%,
+        82% 100%,
+        18% 100%,
+        0% 38%
+    );
+    position: absolute; /* Use absolute positioning to place elements */
+    display: flex; /* Use flexbox to center text */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 12px; /* Adjust font size if necessary */
+}
+
+.text {
+    display: inline-block;
+    transform-origin: center;
+}
+
+.left1 .text {
+    transform: rotate(-111deg);
+}
+
+.left2 .text {
+    transform: rotate(252deg);
+}
+
+.center .text {
+    transform: rotate(252deg); /* No rotation */
+}
+
+.right1 .text {
+    transform: rotate(111deg);
+}
+
+.right2 .text {
+    transform: rotate(-72deg);
+}
+
+.bottom .text {
+    transform: rotate(180deg);
+}
+
+.bottom-externo .text {
+    transform: rotate(180deg);
+}
+
+.pentagono.left1 {
+    transform: translate(-58px, -63px) rotate(-111deg); /* Adjust to position within container */
+}
+
+.pentagono.left2 {
+    transform: translate(-83px, 39px) rotate(180deg); /* Adjust to position within container */
+}
+
+.pentagono.center {
+    transform: translate(0, 0); /* Center is already centered by default */
+}
+
+.pentagono.right1 {
+    transform: translate(57px, -63px) rotate(111deg); /* Adjust to position within container */
+}
+
+.pentagono.right2 {
+    transform: translate(82px, 39px) rotate(180deg); /* Adjust to position within container */
+}
+
+.pentagono.bottom {
+    transform: translate(0, 101px) rotate(180deg); /* Adjust to position within container */
+}
+
+.pentagono.bottom-externo {
+    transform: translate(-50px, 164px) rotate(0deg); /* Adjust to position within container */
+}

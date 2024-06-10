@@ -1,0 +1,35 @@
+<!-- navbar.html -->
+<nav class="navbar">
+    <div class="navbar__logo">
+        <a href="index.html">Calendario 3D Poliedro</a>
+    </div>
+    
+    <ul class="navbar__links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about-me.html">Sobre mi</a></li>
+        <li>
+            <label class="switch" for="switchModo">
+              <input type="checkbox" id="switchModo" onchange="ModoOscuro()">
+              <span class="slider"></span>
+            </label>
+          </li>
+          <li>
+            <button onclick="CambiarIdioma()" id="boton-lenguaje" class="modo-claro" aria-label="Change Language">
+                <img class="imagenIconoLenguaje" src="img/idioma.png" alt="boton de lenguaje">
+            </button>
+          </li>
+    </ul>
+    <a href="get-started.html" class="navbar__btn btn-empezar">Empezar</a>
+    <button class="navbar__btn__toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i> <!-- https://fontawesome.com/icons -->
+    </button>
+</nav>
+
+<div class="dropdown__menu">
+    <ul class="navbar__links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="about-me.html">Sobre mi</a></li>
+    <li><a href="language.html">Idioma</a></li>
+    <li><a href="get-started.html" class="navbar__btn">Empezar</a></li>
+    </ul>
+</div>

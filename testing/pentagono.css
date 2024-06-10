@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    gap: 0px;
+}
+
+.pentagono {
+    background-color: #ffcc00;
+}
+
+.pentagono.center {
+    clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+);
+    transform: rotate(0deg);
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.pentagono.left {
+    clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+);
+    transform: rotate(-108deg);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.pentagono.right {
+    clip-path: polygon(
+        50% 0%,
+        100% 38%,
+        82% 100%,
+        18% 100%,
+        0% 38%
+    );
+        transform: rotate(108deg);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.pentagono.bottom {
+    clip-path: polygon(
+        50% 0%,
+        100% 38%,
+        82% 100%,
+        18% 100%,
+        0% 38%
+    );
+        transform: rotate(180deg);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* .empty {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.empty:last-of-type {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+} */

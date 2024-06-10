@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Dodecaedro</title>
+    <link rel="stylesheet" href="plantilla.css">
+</head>
+<body>
+    <div class="controls">
+        <label for="color">Color de Texto:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="background">Color de Fondo:</label>
+        <input type="color" id="background" name="background">
+
+        <label for="font">Tipo de Fuente:</label>
+        <select id="font" name="font">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+        </select>
+
+        <label for="background-image">Imagen de Fondo:</label>
+        <input type="file" id="background-image" name="background-image">
+    </div>
+    <canvas id="dodecahedron-canvas" width="800" height="800"></canvas>
+    <button id="print-button">Imprimir</button>
+    <script src="plantilla.js"></script>
+</body>
+</html>
